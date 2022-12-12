@@ -19,7 +19,7 @@ const Navbar = ()=>{
                   <button className="dropbtn">Nhiệm vụ</button>
                   <div className="dropdown-content">
                       <Link to="/task">Cho Collector</Link>
-                      <Link href="/task">Cho Janitor</Link>
+                      <Link to="/task">Cho Janitor</Link>
                   </div>
               </div>
               <div className="dropdown">
@@ -30,5 +30,5 @@ const Navbar = ()=>{
         </div>
     );
 }
-
+    
 export default Navbar;
