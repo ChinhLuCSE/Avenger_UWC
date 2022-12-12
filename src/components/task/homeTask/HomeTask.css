@@ -1,0 +1,83 @@
+.home-task{
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+}
+.task-header{
+    height: 5rem;
+    width: 30vw;
+    border-radius: 2rem;
+    border: 2px solid #000;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: #fff;
+    font-weight: bold;
+}
+.search-task{
+    display: flex;
+    margin-top: 1rem;
+}
+.search-task p{
+    text-align: center;
+}
+.search-task input{
+    height: 1.7rem;
+    margin-left: 1rem;
+}
+
+.view-order-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-order-task p{
+    margin:auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.list-task{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+.list-task ul{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.list-task ul li{
+    width: 35%;
+    display: flex;
+    margin: 1rem 3rem;
+    background-color: #fff;
+    padding-right: 3rem;
+    border-radius: 2rem;
+    border: 1px solid #000;
+}
+.list-task ul li .left-box{
+    border: 1px solid #000;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(212, 211, 211);
+}
+
+.list-task ul li .view-detail{
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+.list-task ul li .view-detail:hover{
+    color: rgba(13, 0, 255);
+}
+.view-order-task .arrow:hover {
+    transform: scale(1.5);   
+}
