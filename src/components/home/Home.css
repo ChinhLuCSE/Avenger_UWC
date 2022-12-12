@@ -1,0 +1,46 @@
+#background-image {
+    width: 90%; height: auto; margin: 0 auto; display: block;
+    animation: animate 4s linear infinite;
+ }
+ @keyframes animate {
+     0% {
+         opacity: 0.5;
+     }
+     20% {
+         opacity: 0.6;
+     }
+     40% {
+         opacity: 0.7;
+     }
+     60% {
+         opacity: 0.8;
+     }
+     80% {
+         opacity: 0.9;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ /* introduction */
+ #introduction {
+     width: 100%; display: flex; justify-content: center; margin: 50px 0px 0px 0px;
+ }
+ #introduction-text {
+     width:50% ; margin: 0px 0px 0px 10%;
+ }
+ #introduction > div > img {
+    width: 70%; height: auto; margin: 0 auto; display: block;
+ }
+ 
+ @media only screen and (max-width: 960px) {
+     #introduction-text {
+         width: 80%;
+         margin-left: 5%;
+     }
+ }
+ @media only screen and (max-width: 750px) {
+     #introduction > div > img {
+         display: none;
+     }
+ }

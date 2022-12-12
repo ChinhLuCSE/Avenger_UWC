@@ -12,8 +12,12 @@ footer {
 }
 footer > div > a {
     color: #fff; 
-    width: 50px;   
+    width: 50px;  
 }
 footer > div > a > i {
     margin-right: 10px;  
+}
+footer > div > a:hover {
+    color: #fff;
+    text-decoration: none; 
 }

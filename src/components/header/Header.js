@@ -7,7 +7,7 @@ const Header = ()=>{
               <p style={{margin: "7px 0px 0px 0px"}}><strong>TÊN CÔNG TY - UWC 2.0</strong></p>
           </div>
           <div id="right-div">
-              <button className="btn btn-light" style={{margin: "7px 0px 0px 0px"}}><a href="/#">Đăng nhập</a></button>
+              <button className="btn btn-light" style={{margin: "6px 0px 6px 0px"}}><strong><a href="/#" style={{textDecoration: "none"}}>Đăng nhập</a></strong></button>
           </div>
         </header>
     );
