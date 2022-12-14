@@ -99,17 +99,19 @@ const ModifyTask = () => {
 
         <div id="myModal" class="modal">
             <div class="modal-content">
-                <span class="close" onClick={close_modal}>&times;</span>
+                <div>
+                    <span class="close" onClick={close_modal} id="right-div">&times;</span>
+                </div><br></br>
                 <div class="container">
                     <h3>Xác nhận xóa nhiệm vụ?</h3>
                     <div class="area-verify">
                         <table>
                             <tr>
                                 <th className="verify">
-                                <Link to="/task/detail"><button>Xác nhận</button></Link>
+                                <Link to="/task/detail"><button className="modi">Xác nhận</button></Link>
                                 </th>
                                 <th className="cancel" onClick={close_modal}>
-                                    <button>Hủy</button>
+                                    <button className="modi">Hủy</button>
                                 </th>
                             </tr>
                         </table>
