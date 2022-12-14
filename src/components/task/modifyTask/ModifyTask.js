@@ -88,10 +88,10 @@ const ModifyTask = () => {
             <table>
                 <tr>
                     <th className="delete" onClick={click_modal}>
-                        <button>Xóa</button>
+                        <button className="modi">Xóa</button>
                     </th>
                     <th className="update">
-                        <button>Chỉnh sửa</button>
+                        <button className="modi">Chỉnh sửa</button>
                     </th>
                 </tr>
             </table>
