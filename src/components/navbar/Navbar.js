@@ -2,32 +2,40 @@ import "./Navbar.css"
 import {Link} from "react-router-dom"
 const Navbar = ()=>{
     return (
-        <div id="nav-box">
-            <div style={{backgroundColor: "#fff"}}></div>
-            <nav className="navbar d-flex justify-content-center" id="navbar">
-                <div className="dropdown">
-                    <button className="dropbtn"><Link to="/" className="dropbtn" style={{textDecoration: 'none'}}>Trang chủ</Link></button>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn">Thông tin</button>
-                    <div className="dropdown-content">
-                        <Link to="/">Collector</Link>
-                        <Link to="/">Janitor Team</Link>
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn">Nhiệm vụ</button>
-                    <div className="dropdown-content">
-                        <Link to="/task">Cho Collector</Link>
-                        <Link to="/task">Cho Janitor</Link>
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn"><a href="/#" className="dropbtn" style={{textDecoration: 'none'}}>Liên hệ</a></button>
-                </div>
-            </nav>
-            <div style={{backgroundColor: "#fff"}}></div>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <Link to="/" class="nav-link" style={{color: "#fff"}}>Trang chủ</Link>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{color: "#fff"}}>
+                        Thông tin 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <Link to="/" class="dropdown-item">Collector</Link>
+                            <Link to="/" class="dropdown-item">Janitor Team</Link>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{color: "#fff"}}>
+                        Nhiệm vụ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <Link to="/task" class="dropdown-item">Cho Collector</Link>
+                            <Link to="/task" class="dropdown-item">Cho Janitor Team</Link>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#" style={{color: "#fff"}}>Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     );
 }
     
