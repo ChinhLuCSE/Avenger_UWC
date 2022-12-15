@@ -1,16 +1,7 @@
-import "./ModifyTask.css"
+import "./AddTask.css"
 import {Link} from 'react-router-dom';
 
-const ModifyTask = () => {
-
-    const click_modal = () => {
-        document.getElementById("myModal").style.display = "block";
-    }
-
-    const close_modal = () => {
-        document.getElementById("myModal").style.display = "none";
-    }
-
+const AddTask = () => {
     return (
     <>
         <div class="task-detail">
@@ -87,40 +78,14 @@ const ModifyTask = () => {
         <div className="staff-task-verify">
             <table>
                 <tr>
-                    <th className="delete" onClick={click_modal}>
-                        <button className="modi">Xóa</button>
-                    </th>
                     <th className="update">
-                        <button className="modi">Chỉnh sửa</button>
+                    <Link to="/task/detail"><button className="modi">Trở về</button></Link>
                     </th>
                 </tr>
             </table>
-        </div>
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div>
-                    <span class="close" onClick={close_modal} id="right-div">&times;</span>
-                </div><br></br>
-                <div class="container">
-                    <h3>Xác nhận xóa nhiệm vụ?</h3>
-                    <div class="area-verify">
-                        <table>
-                            <tr>
-                                <th className="verify">
-                                <Link to="/task/detail"><button className="modi">Xác nhận</button></Link>
-                                </th>
-                                <th className="cancel" onClick={close_modal}>
-                                    <button className="modi">Hủy</button>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </div>
     </>
     );
 }
 
-export default ModifyTask;
+export default AddTask;

@@ -26,7 +26,7 @@ const TaskDetail = () =>{
                         Tháng 12 năm 2022
                     <AiOutlineArrowRight className="arrow right-arrow"/>
                 </div>
-                <button className="add-task-button"><Link to="/task/modify">Thêm nhiệm vụ</Link></button>
+                <button className="add-task-button"><Link to="/task/addtask">Thêm nhiệm vụ</Link></button>
                 <button className="notify-button">Gửi thông báo</button>
             </div>
             <ul className="task-box">
@@ -37,7 +37,7 @@ const TaskDetail = () =>{
                                 <span>{task.day}</span>
                                 <div className="task-list">
                                     {
-                                        task.task.map(e=><p>{e}</p>)
+                                        task.task.map(e=><Link to="/task/modify"><p class="task">{e}</p></Link>)
                                     }
                                 </div>
                             </li>
