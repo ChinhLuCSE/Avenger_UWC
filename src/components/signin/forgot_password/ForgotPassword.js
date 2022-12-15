@@ -13,8 +13,9 @@ const ForgotPassword = ()=>{
     // };
 
     return (
-
-    <Container style={{marginTop: '50px'}}>
+    
+    <div className="signin-container">
+        <Container style={{marginTop: '50px'}}>
         <Row width={200} >
             <Col xs={12|{order: 'last'}} md={12|{order: 'last'}} lg={8|{order: 'last'}} style={{justifyContent: `center`}}>
                 <div className="left-container animate">
@@ -53,6 +54,8 @@ const ForgotPassword = ()=>{
             </Col>
         </Row>
     </Container>
+    </div>
+    
 
     );
 
