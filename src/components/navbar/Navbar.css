@@ -1,65 +1,7 @@
-#nav-box {
-  display: flex; justify-content: center; padding: 0px; background-color: #fff;
-}
-#navbar {
-  /* margin-top: 50px; */
-  width: 90%;
-  background-color: #000000; 
-  color: #ffffff;
-}
-#navbar > div {
-  margin: 0px 70px;
-}
-#navbar > div > a {
-  color: #fff;
-}
+#navbarNavDropdown {
+  justify-content: space-around;
 
-.dropbtn {
-  background-color: #000;
-  color: white;
-  border: none;
 }
-.dropdown {
-position: relative;
-display: inline-block;
-}
-.dropdown-content {
-width: 8px;
-display: none;
-position: absolute;
-background-color: #000;
-min-width: 160px;
-box-shadow: 0px 8px 1 6px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-.dropdown-content a {
-color: #fff;
-padding: 8px 10px;
-text-decoration: none;
-display: block;
-}
-
-.dropdown-content a:hover {background-color: #A3B3B5;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #A3B3B5;}
-
-@media only screen and (max-width: 960px) {
-#navbar > div {
-  margin: 0px 40px;
-}
-.dropdown-content {
-  min-width: 120px;
-}
-}
-
-@media only screen and (max-width: 700px) {
-#navbar {
-    flex-wrap: none;
-}
-#navbar > div {
-    margin: 0px 18px;
-}
-.dropdown-content {
-  min-width: 100px;
-}
+.navbar-nav > li {
+  margin: 0px 50px;
 }
