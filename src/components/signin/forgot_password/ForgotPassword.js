@@ -19,7 +19,7 @@ const ForgotPassword = ()=>{
             <Col xs={12|{order: 'last'}} md={12|{order: 'last'}} lg={8|{order: 'last'}} style={{justifyContent: `center`}}>
                 <div className="left-container animate">
                     <div>
-                        <img src="image/company_image.jpg" style={{width: `100%`}} alt="Anh cong ty" />
+                        <img src="/image/company_image.jpg" style={{width: `100%`}} alt="Anh cong ty" />
                     </div>
                 </div>
                 
