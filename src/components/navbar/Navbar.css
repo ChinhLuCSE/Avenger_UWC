@@ -2,5 +2,14 @@
   justify-content: space-around;
 }
 .navbar-nav > li {
-  margin: 0px 50px;
+  margin: 0px 70px;
+}
+.dropdown-menu { 
+  background-color: #343A40;
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:hover {
+  background-color: #A3B3B5;;
 }
